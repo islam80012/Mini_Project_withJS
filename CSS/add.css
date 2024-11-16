@@ -1,0 +1,98 @@
+body {
+    padding: 0;
+    display: flex;            /* Utilise Flexbox */
+    justify-content: center;   /* Centre horizontalement */
+    align-items: center;       /* Centre verticalement */
+    min-height: 100vh;         /* Prend toute la hauteur de la vue */
+    margin: 0;         
+    font-family: Merriweather, serif;
+    background-color: #aab7b7; 
+}
+.form_ajouter{
+    width: 55%;
+    background-color: #ffffffde;
+    padding: 65px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+h2{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2d4045;
+    font-size: 40px;
+    font-weight: bold;
+}
+label{
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: -13px;
+}
+input{
+    width: 60%;
+    padding: 12px 20px;
+    margin-top: -6px;
+    margin-bottom: 23px;
+    font-size: 20px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #8bb7c2;
+    box-shadow: 0 0 8px rgba(139, 183, 194, 0.5);
+}
+.ajouterbtn,.submit, .retour{
+    width: 35%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #2d4045;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.ajouterbtn{
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: -27px;
+}
+.ajouterbtn:hover,.submit:hover, .retour:hover{
+        background-color: #1d2b2e;
+}
+.Container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.Buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    height: 60px;
+}
+
+.submit, .retour {
+    padding: 15px;
+    width: 140px;
+    font-size: 16px;
+}
+
+#return{
+   margin-top: -29px;
+}
+

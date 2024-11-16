@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/add.css">
+    <title>Ajouter une Révision</title>
+</head>
+<body>
+    <form class="form_ajouter" method="post" onsubmit="ValidateForm(event)">
+        <h2>Révision</h2>
+        <label>Module</label>
+        <input id="module" type="text" placeholder="Entrer le Module">
+        <label>Jours libres</label>
+        <div class="Container">
+            <input id="dateRevison" type="date" placeholder="Entrer vos Dates libres " >
+            <input id="heure" type="time" placeholder="Entrer les Heurs libres">
+            <button type="button" class="ajouterbtn" onclick="ajouterdate()">Ajouter Date</button>
+        </div>
+        <label>Date examen</label>
+        <input id="dateExamen" type="Date" placeholder="Entrer votre Date d'Examen">
+        <div class="Buttons">
+            <input class="submit" type="submit" value="Submit">
+            <button onclick="RetourAccueil()" class="retour" id="return">  <i class="fas fa-arrow-left"></i></button>
+        </div>
+        </form>
+
+    <script src="../JS/add.js"></script>
+</body>
+</html>
