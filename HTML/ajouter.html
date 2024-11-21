@@ -12,14 +12,19 @@
         <h2>Révision</h2>
         <label>Module</label>
         <input id="module" type="text" placeholder="Entrer le Module">
-        <label>Jours libres</label>
+        <span id="errmod" class="error-message"></span>
         <div class="Container">
-            <input id="dateRevison" type="date" placeholder="Entrer vos Dates libres " >
-            <input id="heure" type="time" placeholder="Entrer les Heurs libres">
+            <label>Jours libres</label>
+            <input id="dateRevison" class="Dates" type="date" placeholder="Entrer vos Dates libres " >
+            <span id="errdate" class="error-message"></span>
+            <label>Heure libre</label>
+            <input id="heure" class="Heure" type="time" placeholder="Entrer les Heurs libres">
+            <span id="errhr" class="error-message"></span>
             <button type="button" class="ajouterbtn" onclick="ajouterdate()">Ajouter Date</button>
         </div>
         <label>Date examen</label>
-        <input id="dateExamen" type="Date" placeholder="Entrer votre Date d'Examen">
+        <input id="dateExamen" type="date" placeholder="Entrer votre Date d'Examen">
+        <span id="errexm" class="error-message"></span>
         <div class="Buttons">
             <input class="submit" type="submit" value="Submit">
             <button onclick="RetourAccueil()" class="retour" id="return">  <i class="fas fa-arrow-left"></i></button>
